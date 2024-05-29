@@ -86,7 +86,6 @@ if __name__ == "__main__":
     stopping_epoch_s = 0
     be_loss = 10000
 
-    # epoch 6에서 최고 성능
     for epoch in range(config["epoch"]):
         train_loss = trainer.train(epoch, train_dataset, writer)
         val_loss = trainer.evaluation(epoch, validation_dataset, writer)
